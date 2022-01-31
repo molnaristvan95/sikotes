@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- root => https://jsbin.com/gegutoz/edit?html,css,js,output -->
   <head>
     <meta name="description" content="">
     <meta charset="utf-8">
@@ -10,42 +11,8 @@
     <link href="https://www.hervis.hu/shop/assets/icons/hervis.svg" rel="icon" size="50" type="image/svg">
     <title>Her-sí.js</title>
     <base target="_blank">
-  </head>
-  <body id="main">
-    <header id="back"></header>
-    <figure>
-      <img src="https://www.hervis.hu/shop/assets/icons/hervis.svg">
-      <figcaption align="center">Hervis Logo</figcaption>
-    </figure>
-    <h1 id="skis" align="center">Kötés_számítás.js</h1>
-    <form id="clas">
-      <select id="categories">
-        <option value="Kezdő">Kezdő</option>
-        <option value="Haladó">Haladó</option>
-        <option value="Profi">Profi</option>
-      </select>
-      <div id="equal">Z:</div>
-    </form>
-    <section id="heightAndWeight">
-      <div><span>&nbsp;</span><span>10-13</span><span>14-17</span><span>18-21</span><span>22-25</span><span>26-30</span><span>31-35</span><span>36-41</span><span>42-48</span><span>49-57</span><span>58-66</span><span>67-78</span><span>79-94</span><span>95&lt;</span></div>
-      <div><span>&#60;148</span><span>A</span><span>B</span><span>C</span><span>D</span><span>E</span><span>F</span><span>G</span><span>H</span><span>H</span><span>H</span><span>H</span><span>&nbsp;</span><span>&nbsp;</span></div>
-      <div><span>149-157</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>F</span><span>G</span><span>H</span><span>I</span><span>I</span><span>I</span><span>I</span><span>&nbsp;</span></div>
-      <div><span>158-166</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>G</span><span>H</span><span>I</span><span>J</span><span>J</span><span>J</span><span>J</span></div>
-      <div><span>167-178</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>H</span><span>I</span><span>J</span><span>K</span><span>K</span><span>K</span></div>
-      <div><span>179-194</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>I</span><span>J</span><span>K</span><span>L</span><span>L</span></div>
-      <div><span>195&lt;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>J</span><span>K</span><span>L</span><span>M</span></div>
-    </section>
-    <section id="age">
-      <div><span>&nbsp;</span><span>A</span><span>B</span><span>C</span><span>D</span><span>E</span><span>F</span><span>G</span><span>H</span><span>I</span><span>J</span><span>K</span><span>L</span><span>M</span></div><div><span>1</span><span>A</span><span>A</span><span>B</span><span>C</span><span>D</span><span>E</span><span>F</span><span>G</span><span>H</span><span>I</span><span>J</span><span>&nbsp;</span><span>&nbsp;</span></div><div><span>2</span><span>A</span><span>B</span><span>C</span><span>D</span><span>E</span><span>F</span><span>G</span><span>H</span><span>I</span><span>J</span><span>K</span><span>&nbsp;</span><span>&nbsp;</span></div><div><span>3</span><span>B</span><span>C</span><span>D</span><span>E</span><span>F</span><span>G</span><span>H</span><span>I</span><span>J</span><span>K</span><span>L</span><span>&nbsp;</span><span>&nbsp;</span></div><div><span>1</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>F</span><span>G</span><span>H</span><span>I</span><span>J</span><span>K</span><span>L</span><span>M</span></div><div><span>2</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>G</span><span>H</span><span>I</span><span>J</span><span>K</span><span>L</span><span>M</span><span>N</span></div><div><span>3</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>H</span><span>I</span><span>J</span><span>K</span><span>L</span><span>M</span><span>N</span><span>O</span></div><div><span>1</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>H</span><span>I</span><span>J</span><span>K</span><span>L</span></div><div><span>2</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>I</span><span>J</span><span>K</span><span>L</span><span>M</span></div><div><span>3</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>J</span><span>K</span><span>L</span><span>M</span><span>N</span></div>
-    </section>
-    <section id="boots">
-      <div><span>&nbsp;</span><span>A</span><span>B</span><span>C</span><span>D</span><span>E</span><span>F</span><span>G</span><span>H</span><span>I</span><span>J</span><span>K</span><span>L</span><span>M</span><span>N</span><span>O</span></div><div><span>&lt; 250</span><span>0.75</span><span>1</span><span>1.25</span><span>1.75</span><span>2</span><span>2.5</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></div><div><span>251-270</span><span>0.75</span><span>1</span><span>1.25</span><span>1.5</span><span>2</span><span>2.5</span><span>3</span><span>3.5</span><span>4.25</span><span>5</span><span>6</span><span>7</span><span>8.5</span><span>10</span><span>12</span></div><div><span>271-290</span><span>&nbsp;</span><span>0.75</span><span>1</span><span>1.5</span><span>1.75</span><span>2.25</span><span>2.5</span><span>3</span><span>4</span><span>4.75</span><span>5.5</span><span>6.75</span><span>8</span><span>9.5</span><span>11.25</span></div><div><span>291-310</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>2</span><span>2.5</span><span>3</span><span>3.5</span><span>4.5</span><span>5.25</span><span>6.25</span><span>7.5</span><span>9</span><span>10.75</span></div><div><span>311-330</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>1.75</span><span>2.25</span><span>2.5</span><span>3.25</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8.5</span><span>10.25</span></div><div><span>331&lt;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>1.75</span><span>2</span><span>2.5</span><span>3.25</span><span>4</span><span>4.75</span><span>5.75</span><span>6.75</span><span>8.25</span><span>10</span></div>
-    </section>
-    <a id="source" href="http://redbirdbike.hu/SI/SI%20tablazat.html">Forrás: redbirdbike.hu</a>
-  </body>
-</html>
-
-*:root{
+    <style rel="stylesheet" type="text/css">
+    *:root{
   font-size:16px;
 }
 *{
@@ -104,13 +71,22 @@ select, option, figcaption, h1, span{
 header#back{
   z-index:-99;
   position:fixed;
-  background:url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/mens-skis-1572033064.jpg?crop=1.00xw:0.889xh;0,0&resize=1200:*') center center fixed;
+  backgroun:url('https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/mens-skis-1572033064.jpg?crop=1.00xw:0.889xh;0,0&resize=1200:*') center center fixed;
   background-size:cover !important;
   width:100vw;
   height:100vh;
   opacity:.15;
   top:0;
   left:0;
+  animation:bg 15s infinite linear;
+}
+@keyframes bg{
+  0%{ background:url('https://molnaristvan95.github.io/sikotes/banner-ski.jpg') center center fixed; }
+  33%{ background:url('https://molnaristvan95.github.io/sikotes/banner-ski.jpg') center center fixed; }
+  33.1%{ background:url('https://molnaristvan95.github.io/sikotes/mens-skis-1572033064.jpg') center center fixed; }
+  66%{ background:url('https://molnaristvan95.github.io/sikotes/mens-skis-1572033064.jpg') center center fixed; }
+  66.1%{ background:url('https://molnaristvan95.github.io/sikotes/ski.jpg') center center fixed; }
+  100%{ background:url('https://molnaristvan95.github.io/sikotes/ski.jpg') center center fixed; }
 }
 figure{
   margin-top:1vh;
@@ -152,7 +128,7 @@ select{
   width:75%;
   text-align:center;
   animation:fadeIn .5s ease-out 1;
-  background:#0b0;
+  background:#090;
   border-radius:4px;
 }
 select > option{
@@ -192,6 +168,7 @@ div#equal{
   padding:4px;
   margin:-1vh auto 2vh;
   animation:runIn 8s ease-in-out 1;
+  white-space:nowrap;
 }
 @keyframes runIn{
   0%{width:0; opacity:0;}
@@ -216,10 +193,19 @@ div#equal::before{
 
 
 section{
-  width:95% !important;
+  width:92.5% !important;
   margin:1vh auto;
+  margin-left:5.75%;
   transition:1s ease-in-out all;
-  overflow:hidden hidden;
+  overflo:hidden hidden;
+  position:relative;
+  margin-top:1.5rem;
+  animation:over 6s linear 1;
+}
+@keyframes over{
+  0%{overflow:hidden hidden;}
+  99.9%{overflow:hidden hidden;}
+  100%{overflow:auto auto;}
 }
 section#boots > div > span{
   width:calc(100% / 16);
@@ -240,7 +226,13 @@ section#boots > div > span:nth-of-type(1) {
   font-size:.4rem;
 }
 
-
+section::before, section::after{
+  content:'sícipő';
+  display:block;
+  width:100%;
+  position:absolute;
+  text-align:center;
+}
 
 section > div > span{
   width:calc(100% / 14);
@@ -251,14 +243,50 @@ section > div > span{
   border:.25px solid #9996;
   white-space:nowrap;
   position:relative;
-  top:0;
+}
+section::before{
+  top:-1.2rem;
   left:0;
 }
-
-button{
-  zoom:3;
+section::after{
+  transform:rotate(-90deg);
+}
+section:nth-of-type(1)::after{
+  width:243px;
+  left:-132px;
+  top:47%;
+}
+section:nth-of-type(2)::after{
+  width:320px;
+  left:-169px;
+  top:47.5%;
+}
+section:nth-of-type(3)::after{
+  width:228px;
+  left:-124px;
+  top:46%;
 }
 
+section:nth-of-type(1)::before{
+  content:'Tömeg';
+}
+section:nth-of-type(2)::before{
+  content:'Kezdeti síelő kód';
+}
+section:nth-of-type(3)::before{
+  content:'Korrigált síelő kód';
+}
+
+
+section:nth-of-type(1)::after{
+  content:'Magasság';
+}
+section:nth-of-type(2)::after{
+  content:'Kor és síelő típus';
+}
+section:nth-of-type(3)::after{
+  content:'Sícipőtalp hossz';
+}
 
 
 a#source{
@@ -266,11 +294,44 @@ a#source{
   display:block;
   text-align:center;
   padding:4px;
-  background:#f006;
+  background:#f003;
 }
-
-
-console.clear();
+    </style>
+  </head>
+  <body id="main">
+    <header id="back"></header>
+    <figure>
+      <img src="https://www.hervis.hu/shop/assets/icons/hervis.svg">
+      <figcaption align="center">Hervis Logo</figcaption>
+    </figure>
+    <h1 id="skis" align="center">Kötés_számítás.js</h1>
+    <form id="clas">
+      <select id="categories">
+        <option value="1">Kezdő</option>
+        <option value="2">Haladó</option>
+        <option value="3">Profi</option>
+      </select>
+      <div id="equal">Z:</div>
+    </form>
+    <section id="heightAndWeight">
+      <div><span>&nbsp;</span><span>10-13</span><span>14-17</span><span>18-21</span><span>22-25</span><span>26-30</span><span>31-35</span><span>36-41</span><span>42-48</span><span>49-57</span><span>58-66</span><span>67-78</span><span>79-94</span><span>95&lt;</span></div>
+      <div><span>&#60;148</span><span>A</span><span>B</span><span>C</span><span>D</span><span>E</span><span>F</span><span>G</span><span>H</span><span>H</span><span>H</span><span>H</span><span>&nbsp;</span><span>&nbsp;</span></div>
+      <div><span>149-157</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>F</span><span>G</span><span>H</span><span>I</span><span>I</span><span>I</span><span>I</span><span>&nbsp;</span></div>
+      <div><span>158-166</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>G</span><span>H</span><span>I</span><span>J</span><span>J</span><span>J</span><span>J</span></div>
+      <div><span>167-178</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>H</span><span>I</span><span>J</span><span>K</span><span>K</span><span>K</span></div>
+      <div><span>179-194</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>I</span><span>J</span><span>K</span><span>L</span><span>L</span></div>
+      <div><span>195&lt;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>J</span><span>K</span><span>L</span><span>M</span></div>
+    </section>
+    <section id="age">
+      <div><span>&nbsp;</span><span>A</span><span>B</span><span>C</span><span>D</span><span>E</span><span>F</span><span>G</span><span>H</span><span>I</span><span>J</span><span>K</span><span>L</span><span>M</span></div><div><span>1</span><span>A</span><span>A</span><span>B</span><span>C</span><span>D</span><span>E</span><span>F</span><span>G</span><span>H</span><span>I</span><span>J</span><span>&nbsp;</span><span>&nbsp;</span></div><div><span>2</span><span>A</span><span>B</span><span>C</span><span>D</span><span>E</span><span>F</span><span>G</span><span>H</span><span>I</span><span>J</span><span>K</span><span>&nbsp;</span><span>&nbsp;</span></div><div><span>3</span><span>B</span><span>C</span><span>D</span><span>E</span><span>F</span><span>G</span><span>H</span><span>I</span><span>J</span><span>K</span><span>L</span><span>&nbsp;</span><span>&nbsp;</span></div><div><span>1</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>F</span><span>G</span><span>H</span><span>I</span><span>J</span><span>K</span><span>L</span><span>M</span></div><div><span>2</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>G</span><span>H</span><span>I</span><span>J</span><span>K</span><span>L</span><span>M</span><span>N</span></div><div><span>3</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>H</span><span>I</span><span>J</span><span>K</span><span>L</span><span>M</span><span>N</span><span>O</span></div><div><span>1</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>H</span><span>I</span><span>J</span><span>K</span><span>L</span></div><div><span>2</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>I</span><span>J</span><span>K</span><span>L</span><span>M</span></div><div><span>3</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>J</span><span>K</span><span>L</span><span>M</span><span>N</span></div>
+    </section>
+    <section id="boots">
+      <div><span>&nbsp;</span><span>A</span><span>B</span><span>C</span><span>D</span><span>E</span><span>F</span><span>G</span><span>H</span><span>I</span><span>J</span><span>K</span><span>L</span><span>M</span><span>N</span><span>O</span></div><div><span>&lt; 250</span><span>0.75</span><span>1</span><span>1.25</span><span>1.75</span><span>2</span><span>2.5</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></div><div><span>251-270</span><span>0.75</span><span>1</span><span>1.25</span><span>1.5</span><span>2</span><span>2.5</span><span>3</span><span>3.5</span><span>4.25</span><span>5</span><span>6</span><span>7</span><span>8.5</span><span>10</span><span>12</span></div><div><span>271-290</span><span>&nbsp;</span><span>0.75</span><span>1</span><span>1.5</span><span>1.75</span><span>2.25</span><span>2.5</span><span>3</span><span>4</span><span>4.75</span><span>5.5</span><span>6.75</span><span>8</span><span>9.5</span><span>11.25</span></div><div><span>291-310</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>2</span><span>2.5</span><span>3</span><span>3.5</span><span>4.5</span><span>5.25</span><span>6.25</span><span>7.5</span><span>9</span><span>10.75</span></div><div><span>311-330</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>1.75</span><span>2.25</span><span>2.5</span><span>3.25</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8.5</span><span>10.25</span></div><div><span>331&lt;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>1.75</span><span>2</span><span>2.5</span><span>3.25</span><span>4</span><span>4.75</span><span>5.75</span><span>6.75</span><span>8.25</span><span>10</span></div>
+    </section>
+    <a id="source" href="http://redbirdbike.hu/SI/SI%20tablazat.html">Forrás: redbirdbike.hu</a>
+  </body>
+  <script type="text/javascript">
+  console.clear();
 console.time();
 console.group();
 
@@ -298,7 +359,7 @@ genSelect(250, 331, ' mm',  clas, clas.children[4]);
 
 let selects = document.querySelectorAll('SELECT'),
     lents = selects.length,
-    arr = [170,60,30,'Kezdő',265],
+    arr = [165,60,30,1,265],
     start = () => {
       let loop = 0;
       do{
@@ -338,20 +399,20 @@ const o = {
   
 }
 
-genArr(o, 1, 13, 'kor');
-genArrVal(10, 13, o.kor1);
-genArrVal(14, 17, o.kor2);
-genArrVal(18, 21, o.kor3);
-genArrVal(22, 25, o.kor4);
-genArrVal(26, 30, o.kor5);
-genArrVal(31, 35, o.kor6);
-genArrVal(36, 41, o.kor7);
-genArrVal(42, 48, o.kor8);
-genArrVal(49, 57, o.kor9);
-genArrVal(58, 66, o.kor10);
-genArrVal(67, 78, o.kor11);
-genArrVal(79, 94, o.kor12);
-genArrVal(95, 95, o.kor13);
+genArr(o, 1, 13, 'tomeg');
+genArrVal(10, 13, o.tomeg1);
+genArrVal(14, 17, o.tomeg2);
+genArrVal(18, 21, o.tomeg3);
+genArrVal(22, 25, o.tomeg4);
+genArrVal(26, 30, o.tomeg5);
+genArrVal(31, 35, o.tomeg6);
+genArrVal(36, 41, o.tomeg7);
+genArrVal(42, 48, o.tomeg8);
+genArrVal(49, 57, o.tomeg9);
+genArrVal(58, 66, o.tomeg10);
+genArrVal(67, 78, o.tomeg11);
+genArrVal(79, 94, o.tomeg12);
+genArrVal(95, 95, o.tomeg13);
 
 
 genArr(o, 1, 6, 'magas');
@@ -362,17 +423,67 @@ genArrVal(167, 178, o.magas4);
 genArrVal(179, 194, o.magas5);
 genArrVal(195, 195, o.magas6);
 
+
+genArr(o, 1, 3, 'kor');
+genArrVal(16, 16, o.kor1);
+genArrVal(17, 49, o.kor2);
+genArrVal(50, 50, o.kor3);
+
+
+genArr(o, 1, 6, 'sicipo');
+genArrVal(250, 250, o.sicipo1);
+genArrVal(251, 270, o.sicipo2);
+genArrVal(271, 290, o.sicipo3);
+genArrVal(291, 310, o.sicipo4);
+genArrVal(311, 330, o.sicipo5);
+genArrVal(331, 331, o.sicipo6);
+
+
+
 let searchField = document.getElementsByTagName('SELECT'),
-    dataTable = document.getElementsByTagName('SECTION');
+    dataTable = document.getElementsByTagName('SECTION'),
+    themeColour = '#0f02',
+    targetColour = '#99f9';
+
+const resetSectionFields = (field) => {
+  let divs = field.children.length,
+      spans = field.children[0].children.length;
+  for (let e = 0; e < divs; e++) {
+    field.children[e].style.background = '#0000';
+    for (let s = 0; s < spans; s++) {
+      field.children[e].children[s].style.background = '#0000';
+    }
+  }
+},
+      lightRoom = (column, from, to, group) => {
+        for (let k = from; k <= to; k++) {
+          column.children[k].children[0].setAttribute('data-text', group);
+        }
+      };
+
+lightRoom(dataTable[1], 1, 3, 1);
+lightRoom(dataTable[1], 4, 6, 2);
+lightRoom(dataTable[1], 7, 9, 3);
 
 let searchFirstValue = () => {
-  let whatAge,
-      whatHeight;
+  resetSectionFields(dataTable[0]);
+  resetSectionFields(dataTable[1]);
+  resetSectionFields(dataTable[2]);
+  let whatWeight,
+      whatHeight,
+      firstCode,
+      whatAge,
+      findSec,
+      findThird,
+      secondCode,
+      shoes,
+      prevCode,
+      indexZ;
   for (let c = 1; c <= 13; c++) {
-    let actually = o['kor' + c].length;
+    let actually = o['tomeg' + c].length;
     for (let v = 0; v < actually; v++) {
-      if (o['kor' + c][v] == searchField[2].value) {
-        whatAge = c;
+      if (o['tomeg' + c][v] == searchField[1].value) {
+        whatWeight = c;
       }
     }
   }
@@ -384,25 +495,71 @@ let searchFirstValue = () => {
       }
     }
   }
-  //window.setTimeout(searchFirstValue, 4000);
+  firstCode = dataTable[0].children[whatHeight].children[whatWeight].textContent;
+  dataTable[0].children[whatHeight].style.background = themeColour;
+  for (let p = 0; p < 7; p++) {
+    dataTable[0].children[p].children[whatWeight].style.background = themeColour;
+  }
+  dataTable[0].children[whatHeight].children[whatWeight].style.background = targetColour;
+  
+  
+  for (let q = 1; q <= 3; q++) {
+    let act3 = o['kor' + q].length;
+    for (let z = 0; z < act3; z++) {
+      if (o['kor' + q][z] == searchField[2].value) {
+        whatAge = q;
+      }
+    }
+  }
+  for (let xx = 0; xx < 14; xx++) {
+    if (dataTable[1].children[0].children[xx].textContent == firstCode) {
+      findSec = xx;
+    }
+  }
+  for (let xy = 1; xy < 10; xy++) {
+    if (dataTable[1].children[xy].children[0].getAttribute('data-text') == whatAge && dataTable[1].children[xy].children[0].textContent == searchField[3].value) {
+      findThird = xy;
+    }
+  }
+  dataTable[1].children[findThird].style.background = themeColour;
+  for (let oo = 0; oo < 10; oo++) {
+    dataTable[1].children[oo].children[findSec].style.background = themeColour;
+  }
+  dataTable[1].children[findThird].children[findSec].style.background = targetColour;
+  secondCode = dataTable[1].children[findThird].children[findSec].textContent;
+  
+  
+  for (let hh = 1; hh <= 6; hh++) {
+    let act4 = o['sicipo' + hh].length;
+    for (let gg = 0; gg < act4; gg++) {
+      if (o['sicipo' + hh][gg] == searchField[4].value) {
+        shoes = hh;
+      }
+    }
+  }
+  dataTable[2].children[shoes].style.background = themeColour;
+  for (let dd = 0; dd <= 15; dd++) {
+    if (dataTable[2].children[0].children[dd].textContent == secondCode) {
+      prevCode = dd;
+    }
+  }
+  for (let ii = 0; ii <= 6; ii++) {
+    dataTable[2].children[ii].children[prevCode].style.background = themeColour;
+  }
+  dataTable[2].children[shoes].children[prevCode].style.background = targetColour;
+  indexZ = dataTable[2].children[shoes].children[prevCode].textContent;
+  equal.innerText = 'Z_index = ' + indexZ;
+  
+  
+  window.setTimeout(searchFirstValue, 1024);
 }
 searchFirstValue();
 
 
-console.log(o);
-
-
-
-
-
-
-
-/*
-window.onbeforeunload = () => {
-  return 'save?';
-}
-*/
+// console.log(o);
 
 
 console.timeEnd();
 console.log('%c The program successfully was loaded', 'font-size:25px; color:#ff0;');
+  </script>
+</html>
