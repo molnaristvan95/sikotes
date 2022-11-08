@@ -319,9 +319,10 @@ name{
       img.qrlg{
         width:100%;
       }
-      @media (landscape) {
+      @media only screen and (orientation: landscape) {
         img.qrlg{
         width:90vh;
+          top:4px;
        }
       }
     </style>
@@ -588,14 +589,8 @@ searchFirstValue();
     q.addEventListener('click', () => {
       if (q.getAttribute('class') == 'qrsm') {
       q.setAttribute('class', 'qrlg');
-        window.setTimeout( () => {
-          q.style.position = 'fixed';
-        }, 500);
       } else {
-        q.style.position = 'absolute';
-        window.setTimeout( () => {
-          q.setAttribute('class', 'qrsm');
-        }, 50);
+        q.setAttribute('class', 'qrsm');
       }
     });
     
