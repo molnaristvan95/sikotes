@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <!-- root => https://jsbin.com/gegutoz/edit?html,css,js,output -->
+  <!-- last update 2022.11.08. 02.00 -->
   <head>
     <meta name="description" content="Számold ki a z-indexet a síkötésedre!">
     <meta charset="utf-8">
@@ -291,16 +292,37 @@ section:nth-of-type(3)::after{
 
 
 a#source, name{
-  color:gold;
+  color:skyblue;
   display:block;
   text-align:center;
   padding:4px;
   background:#f003;
+  letter-spacing:.5px;
 }
+name{
+  margin-top:8px;
+  color:gold;
+}
+      img.qrsm{
+        position:absolute;
+        top:4px;
+        right:4px;
+        width:16px;
+        box-shadow:2px 1px 4px 0 #000;
+        border:1px outset #0f0;
+        z-index:99999;
+        transition:.3s linear all;
+      }
+      img.qrlg{
+        width:90%;
+        right:5%;
+        object-fit:contain;
+      }
     </style>
   </head>
   <body id="main">
     <header id="back"></header>
+    <img id="qrcode" src="https://molnaristvan95.github.io/sikotes/hersi_qr.png" alt="image about the qr code" class="qrsm">
     <figure>
       <img src="https://www.hervis.hu/shop/assets/icons/hervis.svg">
       <figcaption align="center">Hervis Logo</figcaption>
@@ -555,13 +577,38 @@ let searchFirstValue = () => {
   window.setTimeout(searchFirstValue, 1024);
 }
 searchFirstValue();
+    
+    const q = document.getElementById('qrcode');
+    q.addEventListener('click', () => {
+      if (q.getAttribute('class') == 'qrsm') {
+      q.setAttribute('class', 'qrlg');
+      } else {
+        q.setAttribute('class', 'qrsm');
+      }
+    });
+    
+    window.addEventListener('keydown', () => {
+    let k = event.key;
+      if (k == 'F12') {
+        window.location.replace('/closekiosk');
+        document.documentElement.innerHTML = 'Sorry';
+      } else if (event.ctrlKey) {
+        window.location.replace('/closekiosk');
+        document.documentElement.innerHTML = 'Sorry';
+      }
+      return true;
+    });
+    
+    /*window.onbeforeunload = () => {
+      return 'Any save?';
+    }*/
 
 
 // console.log(o);
 
 
 console.timeEnd();
-console.log('%c The program successfully was loaded', 'font-size:25px; color:#ff0;');
+console.log('%c The program successfully was loaded %c © 2022 Molnár István', 'font-size:25px; color:#ff0;', 'font-size:25px; color:#f60;');
   </script>
   </body>
 </html>
