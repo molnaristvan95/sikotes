@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" oncontextmenu="return false">
   <!-- root => https://jsbin.com/gegutoz/edit?html,css,js,output -->
-  <!-- last update 2022.11.08. 03:39 -->
+  <!-- last update 2022.11.08. 03:42 -->
   <head>
     <meta name="description" content="Számold ki a z-indexet a síkötésedre!">
     <meta charset="utf-8">
@@ -305,6 +305,7 @@ name{
 }
       img#qrcode{
         width:32px;
+        height:32px;
         transition:.3s linear all;
         object-fit:contain;
         display:block;
@@ -313,11 +314,14 @@ name{
       }
       img.qrsm{
         box-shadow:2px 1px 4px 0 #000;
-        border:1px outset #0f0;
+        border:2px outset #ff0;
+        border-left-color:skyblue;
+        border-top-color:skyblue;
       }
       @media only screen and (orientation: landscape) {
         img.qrlg{
         height:100vh;
+          width:100vh;
           margin:4px auto;
        }
       }
