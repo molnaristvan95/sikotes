@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" oncontextmenu="return false">
   <!-- root => https://jsbin.com/gegutoz/edit?html,css,js,output -->
-  <!-- last update 2022.11.08. 04:31 -->
+  <!-- last update 2022.11.08. 04:43 -->
   <head>
     <meta name="description" content="Számold ki a z-indexet a síkötésedre!">
     <meta charset="utf-8">
@@ -312,6 +312,7 @@ name{
         display:block;
         margin:4px;
         margin-left:calc(100% - (32px + 4px));
+        border-radius:4px;
       }
       img.qrsm{
         box-shadow:2px 2px 4px 0 #ff0;
@@ -330,12 +331,14 @@ name{
         width:100% !important;
         height:100vw !important;
           margin:calc((100vh - 100vw - 32px) / 2) 0 !important;
+        border-radius:16px;
        }
       @media only screen and (orientation: landscape) {
         img.qrlg{
         height:100vh !important;
           width:100vh !important;
           margin:4px calc((100vw - 100vh) / 2) !important;
+          border-radius:16px;
        }
         figure > img {
           width:16%;
@@ -351,7 +354,7 @@ name{
       <img src="https://www.hervis.hu/shop/assets/icons/hervis.svg">
       <figcaption align="center">Hervis Logo</figcaption>
     </figure>
-    <h1 id="skis" align="center">One Hervis</h1>
+    <h1 id="skis" align="center">#oneHervis</h1>
     <form id="clas">
       <select id="categories">
         <option value="1">Kezdő</option>
