@@ -2,14 +2,14 @@
 <html lang="en">
   <!-- root => https://jsbin.com/gegutoz/edit?html,css,js,output -->
   <head>
-    <meta name="description" content="">
+    <meta name="description" content="Számold ki a z-indexet a síkötésedre!">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Molnár István || Мельник Степан">
-    <meta name="keywords" content="">
+    <meta name="keywords" content="hervis, sport, ski, calc">
     <meta name="theme-color" content="#050">
     <link href="https://www.hervis.hu/shop/assets/icons/hervis.svg" rel="icon" size="50" type="image/svg">
-    <title>Her-sí.js</title>
+    <title>Hervis - síkötés számítás</title>
     <base target="_blank">
     <style rel="stylesheet" type="text/css">
     *:root{
@@ -113,6 +113,7 @@ h1#skis{
   text-shadow:2px 2px 6px yellow;
   margin-top:1vh;
   font-weight:100;
+  font-family: impact !important;
 }
 @keyframes begin{
   0%{width:0%;}
@@ -289,7 +290,7 @@ section:nth-of-type(3)::after{
 }
 
 
-a#source{
+a#source, name{
   color:gold;
   display:block;
   text-align:center;
@@ -304,7 +305,7 @@ a#source{
       <img src="https://www.hervis.hu/shop/assets/icons/hervis.svg">
       <figcaption align="center">Hervis Logo</figcaption>
     </figure>
-    <h1 id="skis" align="center">Kötés_számítás.js</h1>
+    <h1 id="skis" align="center">One Hervis</h1>
     <form id="clas">
       <select id="categories">
         <option value="1">Kezdő</option>
@@ -329,7 +330,7 @@ a#source{
       <div><span>&nbsp;</span><span>A</span><span>B</span><span>C</span><span>D</span><span>E</span><span>F</span><span>G</span><span>H</span><span>I</span><span>J</span><span>K</span><span>L</span><span>M</span><span>N</span><span>O</span></div><div><span>&lt; 250</span><span>0.75</span><span>1</span><span>1.25</span><span>1.75</span><span>2</span><span>2.5</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></div><div><span>251-270</span><span>0.75</span><span>1</span><span>1.25</span><span>1.5</span><span>2</span><span>2.5</span><span>3</span><span>3.5</span><span>4.25</span><span>5</span><span>6</span><span>7</span><span>8.5</span><span>10</span><span>12</span></div><div><span>271-290</span><span>&nbsp;</span><span>0.75</span><span>1</span><span>1.5</span><span>1.75</span><span>2.25</span><span>2.5</span><span>3</span><span>4</span><span>4.75</span><span>5.5</span><span>6.75</span><span>8</span><span>9.5</span><span>11.25</span></div><div><span>291-310</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>2</span><span>2.5</span><span>3</span><span>3.5</span><span>4.5</span><span>5.25</span><span>6.25</span><span>7.5</span><span>9</span><span>10.75</span></div><div><span>311-330</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>1.75</span><span>2.25</span><span>2.5</span><span>3.25</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8.5</span><span>10.25</span></div><div><span>331&lt;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>1.75</span><span>2</span><span>2.5</span><span>3.25</span><span>4</span><span>4.75</span><span>5.75</span><span>6.75</span><span>8.25</span><span>10</span></div>
     </section>
     <a id="source" href="http://redbirdbike.hu/SI/SI%20tablazat.html">Forrás: redbirdbike.hu</a>
-  </body>
+    <name>&#169; Budapest, Árkád, Hervis, Molnár István</name>
   <script type="text/javascript">
   console.clear();
 console.time();
@@ -562,4 +563,5 @@ searchFirstValue();
 console.timeEnd();
 console.log('%c The program successfully was loaded', 'font-size:25px; color:#ff0;');
   </script>
+  </body>
 </html>
