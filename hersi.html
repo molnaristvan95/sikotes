@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" oncontextmenu="return false">
   <!-- root => https://jsbin.com/gegutoz/edit?html,css,js,output -->
-  <!-- last update 2022.11.08. 04:05 -->
+  <!-- last update 2022.11.08. 04:07 -->
   <head>
     <meta name="description" content="Számold ki a z-indexet a síkötésedre!">
     <meta charset="utf-8">
@@ -93,7 +93,7 @@ figure{
   margin-top:1vh;
 }
 figure > img{
-  width:16%;
+  width:24%;
   margin:auto;
   display:block;
   filter:grayscale(.5);
@@ -317,11 +317,18 @@ name{
         border:2px outset #ff0;
         border-left-color:skyblue;
         border-top-color:skyblue;
+        animation:gipsycircle 8s linear 8;
+      }
+      @keyframes gipsycircle {
+        0%{transform:rotate(0deg);}
+        90%{transform:rotate(0deg);}
+        95%{transform:rotate(360deg);}
+        100%{transform:rotate(360deg);}
       }
       img.qrlg{
         width:100% !important;
         height:100vw !important;
-          margin:calc((100vh - 100vw) / 2) 0 !important;
+          margin:calc((100vh - 100vw - 32px) / 2) 0 !important;
        }
       @media only screen and (orientation: landscape) {
         img.qrlg{
@@ -329,6 +336,9 @@ name{
           width:100vh !important;
           margin:4px calc((100vw - 100vh) / 2) !important;
        }
+        figure > img {
+          width:16%;
+        }
       }
     </style>
   </head>
