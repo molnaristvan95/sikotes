@@ -306,30 +306,20 @@ name{
       img#qrcode{
         transition:.3s linear all;
         object-fit:contain;
-        position:absolute;
-        top:4px !important;
-        right:4px !important;
+        display:block;
+        margin:4px auto;
       }
       img.qrsm{
-        top:4px !important;
-        right:4px !important;
         width:32px;
         box-shadow:2px 1px 4px 0 #000;
         border:1px outset #0f0;
-        z-index:999999;
-        height:auto;
       }
       img.qrlg{
         width:100%;
-        height:auto;
-        top:4px !important;
-        right:4px !important;
       }
       @media only screen and (orientation: landscape) {
         img.qrlg{
         height:100vh;
-          top:4px !important;
-        right:4px !important;
        }
       }
     </style>
