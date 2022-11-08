@@ -303,20 +303,26 @@ name{
   margin-top:8px;
   color:gold;
 }
+      img#qrcode{
+        transition:.3s linear all;
+        object-fit:contain;
+      }
       img.qrsm{
         position:absolute;
         top:4px;
         right:4px;
-        width:16px;
+        width:32px;
         box-shadow:2px 1px 4px 0 #000;
         border:1px outset #0f0;
         z-index:99999;
-        transition:.3s linear all;
       }
       img.qrlg{
-        width:90%;
-        right:5%;
-        object-fit:contain;
+        width:100%;
+      }
+      @media (landscape) {
+        img.qrlg{
+        width:90vh;
+       }
       }
     </style>
   </head>
@@ -352,7 +358,7 @@ name{
       <div><span>&nbsp;</span><span>A</span><span>B</span><span>C</span><span>D</span><span>E</span><span>F</span><span>G</span><span>H</span><span>I</span><span>J</span><span>K</span><span>L</span><span>M</span><span>N</span><span>O</span></div><div><span>&lt; 250</span><span>0.75</span><span>1</span><span>1.25</span><span>1.75</span><span>2</span><span>2.5</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span></div><div><span>251-270</span><span>0.75</span><span>1</span><span>1.25</span><span>1.5</span><span>2</span><span>2.5</span><span>3</span><span>3.5</span><span>4.25</span><span>5</span><span>6</span><span>7</span><span>8.5</span><span>10</span><span>12</span></div><div><span>271-290</span><span>&nbsp;</span><span>0.75</span><span>1</span><span>1.5</span><span>1.75</span><span>2.25</span><span>2.5</span><span>3</span><span>4</span><span>4.75</span><span>5.5</span><span>6.75</span><span>8</span><span>9.5</span><span>11.25</span></div><div><span>291-310</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>2</span><span>2.5</span><span>3</span><span>3.5</span><span>4.5</span><span>5.25</span><span>6.25</span><span>7.5</span><span>9</span><span>10.75</span></div><div><span>311-330</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>1.75</span><span>2.25</span><span>2.5</span><span>3.25</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8.5</span><span>10.25</span></div><div><span>331&lt;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>&nbsp;</span><span>1.75</span><span>2</span><span>2.5</span><span>3.25</span><span>4</span><span>4.75</span><span>5.75</span><span>6.75</span><span>8.25</span><span>10</span></div>
     </section>
     <a id="source" href="http://redbirdbike.hu/SI/SI%20tablazat.html">Forrás: redbirdbike.hu</a>
-    <name>&#169; Budapest, Árkád, Hervis, Molnár István</name>
+    <name>&#169; Budapest, Árkád, Molnár István</name>
   <script type="text/javascript">
   console.clear();
 console.time();
@@ -582,8 +588,14 @@ searchFirstValue();
     q.addEventListener('click', () => {
       if (q.getAttribute('class') == 'qrsm') {
       q.setAttribute('class', 'qrlg');
+        window.setTimeout( () => {
+          q.style.position = 'fixed';
+        }, 500);
       } else {
-        q.setAttribute('class', 'qrsm');
+        q.style.position = 'absolute';
+        window.setTimeout( () => {
+          q.setAttribute('class', 'qrsm');
+        }, 50);
       }
     });
     
