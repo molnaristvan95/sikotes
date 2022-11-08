@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" oncontextmenu="return false">
   <!-- root => https://jsbin.com/gegutoz/edit?html,css,js,output -->
   <!-- last update 2022.11.08. 03:00 -->
   <head>
@@ -306,26 +306,30 @@ name{
       img#qrcode{
         transition:.3s linear all;
         object-fit:contain;
+        position:absolute;
+        top:4px !important;
+        right:4px !important;
       }
       img.qrsm{
-        position:absolute;
-        top:4px;
-        right:4px;
+        top:4px !important;
+        right:4px !important;
         width:32px;
         box-shadow:2px 1px 4px 0 #000;
         border:1px outset #0f0;
         z-index:999999;
+        height:auto;
       }
       img.qrlg{
         width:100%;
-        top:4px;
-        right:4px;
+        height:auto;
+        top:4px !important;
+        right:4px !important;
       }
       @media only screen and (orientation: landscape) {
         img.qrlg{
-        width:90vh;
-          top:4px;
-          right:4px;
+        height:100vh;
+          top:4px !important;
+        right:4px !important;
        }
       }
     </style>
